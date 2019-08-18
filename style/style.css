@@ -9,10 +9,14 @@
   flex-direction: column;
   list-style-type: none;
   padding: 32px 0 0;
+  height: 100vh;
+  background: tomato;
 }
 
 .navigation__list--visible {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .navigation__item {
