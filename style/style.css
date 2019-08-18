@@ -1,0 +1,48 @@
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+.navigation__list {
+  display: none;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 32px 0 0;
+}
+
+.navigation__list--visible {
+  display: flex;
+}
+
+.navigation__item {
+  margin: 16px;
+}
+
+.navigation__switcher {
+  border: none;
+  background: none;
+  font-size: 20px;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.site__header {
+  min-height: 16px;
+}
+
+@media (min-width: 800px) {
+  .navigation {
+    display: block;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navigation__switcher {
+    display: none;
+  }
+}
